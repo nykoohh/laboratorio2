@@ -52,7 +52,7 @@ void * firstList(List * list)
 {
     list -> current = list -> head -> data;
     
-    return list -> current;
+    return current;
 }
 
 void * nextList(List * list) {
