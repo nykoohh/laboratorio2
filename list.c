@@ -83,7 +83,7 @@ void * lastList(List * list)
         return NULL;
     }
 
-    list -> current = list -> current -> tail;
+    list -> current = list -> current -> prev;
     
     return list -> current;
 }
