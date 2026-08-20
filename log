@@ -47,3 +47,9 @@ list.c:53:39: error: ‘Node’ has no member named ‘dato’; did you mean ‘
       |                                       ^~~~
       |                                       data
 fba5dac
+Thu Aug 20 09:40:36 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/60
+b116f26
