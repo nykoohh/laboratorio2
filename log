@@ -223,3 +223,13 @@ Thu Aug 20 09:54:00 PM UTC 2026:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 f1bf83d
+Thu Aug 20 09:54:58 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:65:73: error: lvalue required as left operand of assignment
+   65 |     if (list == NULL || list -> head == NULL || list -> current -> next = NULL)
+      |                                                                         ^
+7158af9
