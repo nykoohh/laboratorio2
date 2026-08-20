@@ -67,7 +67,7 @@ void * nextList(List * list)
         return NULL;
     }
 
-    list -> current = list -> next;
+    list -> current = list -> head;
     
     return list -> current -> data;
 }
