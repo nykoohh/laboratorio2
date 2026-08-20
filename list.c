@@ -50,9 +50,9 @@ List * createList()
 
 void * firstList(List * list) 
 {
-    lista -> current = lista -> head -> dato;
+    list -> current = list -> head -> dato;
     
-    return lista -> current;
+    return list -> current;
 }
 
 void * nextList(List * list) {
