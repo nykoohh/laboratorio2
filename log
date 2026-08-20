@@ -288,3 +288,17 @@ list.c:93:76: error: lvalue required as left operand of assignment
    93 |     if (list =  NULL || list -> current == NULL || list -> current -> prev = NULL)
       |                                                                            ^
 b19d486
+Thu Aug 20 10:03:12 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘prevList’:
+list.c:93:14: error: assignment to ‘List *’ {aka ‘struct List *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   93 |     if (list =  NULL || list -> current == NULL || list -> current -> prev == NULL)
+      |              ^
+list.c:93:9: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   93 |     if (list =  NULL || list -> current == NULL || list -> current -> prev == NULL)
+      |         ^~~~
+cc1: all warnings being treated as errors
+cb53e6f
