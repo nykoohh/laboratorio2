@@ -82,3 +82,23 @@ list.c:55:12: error: returning ‘int’ from a function with return type ‘voi
    55 |     return current;
       |            ^~~~~~~
 48fd817
+Thu Aug 20 09:43:28 PM UTC 2026: 
+ list.c | 9 ++++++---
+ 1 file changed, 6 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:53:5: error: ‘current’ undeclared (first use in this function); did you mean ‘popCurrent’?
+   53 |     current = list -> head -> data;
+      |     ^~~~~~~
+      |     popCurrent
+list.c:53:5: note: each undeclared identifier is reported only once for each function it appears in
+list.c:55:12: error: ‘lista’ undeclared (first use in this function); did you mean ‘list’?
+   55 |     return lista -> current;
+      |            ^~~~~
+      |            list
+list.c:56:1: error: control reaches end of non-void function [-Werror=return-type]
+   56 | }
+      | ^
+cc1: all warnings being treated as errors
+5e214fc

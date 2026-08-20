@@ -50,12 +50,15 @@ List * createList()
 
 void * firstList(List * list) 
 {
-    int current = list -> head -> data;
+    current = list -> head -> data;
     
-    return current;
+    return lista -> current;
 }
 
-void * nextList(List * list) {
+void * nextList(List * list) 
+{
+    
+    
     return NULL;
 }
 
