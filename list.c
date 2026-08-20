@@ -41,7 +41,7 @@ List * createList()
     lista -> tail = NULL;
     lista -> current = NULL;
     
-     return NULL;
+    return lista;
 }
 
 // 2. Programe las funciones void * firstList(List * list) y void * nextList(List * list).
