@@ -244,3 +244,13 @@ Thu Aug 20 09:55:38 PM UTC 2026:
  tests:  5|4
 total_score: 20/60
 e3ead37
+Thu Aug 20 09:58:43 PM UTC 2026: 
+ list.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘lastList’:
+list.c:86:39: error: ‘Node’ has no member named ‘tail’
+   86 |     list -> current = list -> current -> tail;
+      |                                       ^~
+7d8385e
