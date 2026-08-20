@@ -190,3 +190,13 @@ Thu Aug 20 09:47:42 PM UTC 2026:
  tests:  2|5
 total_score: 15/60
 6438c6a
+Thu Aug 20 09:49:15 PM UTC 2026: 
+ list.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:70:28: error: ‘List’ {aka ‘struct List’} has no member named ‘next’
+   70 |     list -> current = list -> next;
+      |                            ^~
+3a09399
