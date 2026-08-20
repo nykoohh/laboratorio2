@@ -233,3 +233,8 @@ list.c:65:73: error: lvalue required as left operand of assignment
    65 |     if (list == NULL || list -> head == NULL || list -> current -> next = NULL)
       |                                                                         ^
 7158af9
+Thu Aug 20 09:55:14 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+c129772
