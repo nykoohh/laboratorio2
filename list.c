@@ -50,7 +50,7 @@ List * createList()
 
 void * firstList(List * list) 
 {
-    list -> current = list -> head -> data;
+    int current = list -> head -> data;
     
     return current;
 }
