@@ -440,3 +440,17 @@ Sun Aug 23 04:17:27 PM UTC 2026:
  tests:  10|2
 total_score: 40/60
 0b59565
+Sun Aug 23 04:24:05 PM UTC 2026: 
+ list.c | 17 ++++++++++++++---
+ 1 file changed, 14 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:149:10: error: expected identifier or ‘(’ before ‘->’ token
+  149 |     Node -> next -> prev = Node;
+      |          ^~
+list.c:147:11: error: unused variable ‘Nodo’ [-Werror=unused-variable]
+  147 |     Node* Nodo = createNode(data);
+      |           ^~~~
+cc1: all warnings being treated as errors
+55c76ba
