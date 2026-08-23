@@ -312,3 +312,15 @@ Sun Aug 23 03:06:53 PM UTC 2026:
  tests:  9|3
 total_score: 30/60
 0a025b5
+Sun Aug 23 03:25:51 PM UTC 2026: 
+ list.c | 12 ++++++++++--
+ 1 file changed, 10 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:109:10: error: dereferencing ‘void *’ pointer [-Werror]
+  109 |     data -> next = list -> head;
+      |          ^~
+list.c:109:10: error: request for member ‘next’ in something not a structure or union
+cc1: all warnings being treated as errors
+d38f4e9
