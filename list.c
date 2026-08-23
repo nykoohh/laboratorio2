@@ -143,8 +143,8 @@ void pushCurrent(List * list, void * data)
     {
         return;
     }
-
-    Node* Nodo = createNode(data);
+    
+    Node *Nodo = createNode(data);
 
     Nodo -> next -> prev = Nodo;
 }
