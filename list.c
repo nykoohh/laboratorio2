@@ -106,7 +106,7 @@ void * prevList(List * list)
 
 void pushFront(List * list, void * data) 
 {
-    data -> next = list -> head;
+    list -> next = list -> head;
 
     list -> head -> prev = data;
 
