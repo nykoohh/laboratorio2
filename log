@@ -395,3 +395,21 @@ list.c:114:23: error: expected expression before ‘void’
   114 |     Nodo = createNode(void *data);
       |                       ^~~~
 7ba6672
+Sun Aug 23 03:45:08 PM UTC 2026: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:111:16: error: ‘return’ with a value, in function returning void [-Wreturn-mismatch]
+  111 |         return NULL;
+      |                ^~~~
+list.c:107:6: note: declared here
+  107 | void pushFront(List * list, void * data)
+      |      ^~~~~~~~~
+list.c:114:29: error: dereferencing ‘void *’ pointer [-Werror]
+  114 |     Node* Nodo = createNode(*data);
+      |                             ^~~~~
+list.c:114:29: error: invalid use of void expression
+cc1: all warnings being treated as errors
+d0dfd64
