@@ -108,10 +108,10 @@ void pushFront(List * list, void * data)
 {
     if (list == NULL)
     {
-        return NULL;
+        return;
     }
     
-    Node* Nodo = createNode(*data);
+    Node* Nodo = createNode(data);
     
     Nodo -> next = list -> head;
 
