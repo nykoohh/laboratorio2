@@ -119,6 +119,10 @@ void pushFront(List * list, void * data)
     {
         list -> head -> prev = Nodo;
     }
+    else
+    {
+        list -> tail = Nodo;
+    }
 
     list -> head = Nodo;
     
