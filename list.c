@@ -187,27 +187,27 @@ void * popCurrent(List * list)
     Node *NodoEliminado = list -> current;
     void *datoGuardado = nodoAEliminar-> data;
 
-    if (nodoAEliminar -> prev != NULL)
+    if (NodoEliminado -> prev != NULL)
     {
-        nodoAEliminar -> prev -> next = nodoAEliminar -> next;
+        NodoEliminado -> prev -> next = NodoEliminado -> next;
     }
     else
     {
-        list -> head = nodoAEliminar -> next;
+        list -> head = NodoEliminado -> next;
     }
 
-    if (nodoAEliminar -> next != NULL)
+    if (NodoEliminado -> next != NULL)
     {
-        nodoAEliminar -> next -> prev = nodoAEliminar -> prev;
+        NodoEliminado -> next -> prev = NodoEliminado -> prev;
     }
     else
     {
-        list -> tail = nodoAEliminar -> prev;
+        list -> tail = NodoEliminado -> prev;
     }
 
-    list -> current = nodoAEliminar -> next;
+    list -> current = NodoEliminado -> next;
 
-    free(nodoAEliminar);
+    free(NodoEliminado);
 
     return datoGuardado;
 }
