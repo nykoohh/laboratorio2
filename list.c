@@ -181,7 +181,7 @@ void * popCurrent(List * list)
 {
     if (list == NULL)
     {
-        return;
+        return NULL;
     }
 
     Node *NodoEliminado = list -> current -> data;
