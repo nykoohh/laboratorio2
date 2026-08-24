@@ -503,3 +503,19 @@ Mon Aug 24 12:25:51 AM UTC 2026:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 da82abd
+Mon Aug 24 12:37:41 AM UTC 2026: 
+ list.c | 29 ++++++++++++++++++++++++-----
+ 1 file changed, 24 insertions(+), 5 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:188:26: error: ‘nodoAEliminar’ undeclared (first use in this function); did you mean ‘NodoEliminado’?
+  188 |     void *datoGuardado = nodoAEliminar-> data;
+      |                          ^~~~~~~~~~~~~
+      |                          NodoEliminado
+list.c:188:26: note: each undeclared identifier is reported only once for each function it appears in
+list.c:187:11: error: unused variable ‘NodoEliminado’ [-Werror=unused-variable]
+  187 |     Node *NodoEliminado = list -> current;
+      |           ^~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+bbda4e1
