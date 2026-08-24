@@ -188,6 +188,8 @@ void * popCurrent(List * list)
 
     list -> current = NULL;
 
+    list -> current = list -> current -> next;
+
     return NodoEliminado;
 }
 
