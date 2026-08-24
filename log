@@ -531,3 +531,9 @@ list.c:188:26: error: ‘nodoAEliminar’ undeclared (first use in this function
       |                          NodoEliminado
 list.c:188:26: note: each undeclared identifier is reported only once for each function it appears in
 40cb422
+Mon Aug 24 12:38:24 AM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  12|0
+total_score: 60/60
+b858ef8

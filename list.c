@@ -185,7 +185,7 @@ void * popCurrent(List * list)
     }
 
     Node *NodoEliminado = list -> current;
-    void *datoGuardado = nodoAEliminar-> data;
+    void *datoGuardado = NodoEliminado-> data;
 
     if (NodoEliminado -> prev != NULL)
     {
